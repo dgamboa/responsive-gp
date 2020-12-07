@@ -30,7 +30,7 @@ time, mark, audio, video {
 /* Custom Reset */
 * {
   box-sizing: border-box; /* If I give an element a width, I want it to respect that width - if I add padding or a border, apply it within the width given */
-  border: 1px solid grey; /* Good to start with this until we're happy with layout */
+  /* border: 1px solid grey; Good to start with this until we're happy with layout */
   max-width: 100%; /* This says you can never be bigger than parent element */
 }
 
@@ -165,4 +165,72 @@ header {
 /* Footer Styles */
 footer {
   background-color: #F9E7DC;
+}
+
+/* Media Queries */
+/* Have to be in pixels because screens are measured in pixels */
+/* Tablet View */
+@media (max-width: 800px) {
+  nav a {
+    width: 15%;
+  }
+  /* Header Section Style */
+  .image img {
+    width: 80%;
+  }
+  /* Camp Section Styles */
+  .camp div {
+    width: 45%;
+  }
+  /* Background Image Section */
+  .bg-img {
+    height: 60vh;
+    background-position: center;
+  }
+}
+
+/* Phone View */
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav a {
+    width: 50%;
+    margin: 2% 0;
+  }
+
+  .blue {
+    order: -1;
+  }
+
+  /* Header Styles */
+  header {
+    flex-wrap: wrap;
+  }
+  
+  .image {
+    width: 80%;
+  }
+
+  .title {
+    width: 80%;
+    margin-top: 4%;
+  }
+
+  .title div {
+    width: 100%;
+  }
+
+  /* Camp Section Style */
+  .camp div {
+    width: 80%;
+  }
+
+  .bg-img {
+    height: 40vh;
+  }
+
 }
