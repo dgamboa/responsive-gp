@@ -20,7 +20,7 @@ vertical-align: baseline;
 }
 *{
     box-sizing:border-box; /*this rule says, if I give an element a width I want it to respect that width - if I add padding or a border, apply it within the width given not in addition to it*/
-    border:1px solid grey;
+    /* border:1px solid grey; */
     max-width:100%; /*this says you can never be bigger than your parent*/
 }
 /*General Styles*/ 
